@@ -4,15 +4,14 @@
     <meta charset="UTF-8">
     <title>1</title>
 
-    <link rel="preload" as="style" onload="this.rel='stylesheet'"
-          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-          crossorigin="anonymous"/>
-    <link rel="preload" as="style" onload="this.rel='stylesheet'" href="https://fonts.googleapis.com/css?family=Lobster"
+    <link rel="preload" as="style" onload="this.rel='stylesheet'" href="css/fonts_googleapis_com_css_family_lobster.css"
           type="text/css">
     <link rel="preload" as="style" onload="this.rel='stylesheet'"
-          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+          href="css/http_maxcdn.bootstrapcdn.com_bootstrap_3.3.7_css_bootstrap.css"/>
+    <link rel="preload" as="style" onload="this.rel='stylesheet'"
+          href="css/http_use.fontawesome.com_releases_v5.8.1_css_all.css">
+    <link rel="preload" as="style" onload="this.rel='stylesheet'"
+          href="css/http_cdnjs.cloudflare.com_ajax_libs_animate.css_4.1.1_animate.css"/>
     <style>
         h2 {
             font-family: Lobster, Monospace;
@@ -47,13 +46,20 @@
         <div class="col-xs-4">
             <button class="btn btn-primary btn-block">
                 <i class="fas fa-thumbs-up"></i>
-                Like</button>
+                Like
+            </button>
         </div>
         <div class="col-xs-4">
-            <button class="btn btn-info btn-block">Info</button>
+            <button class="btn btn-info btn-block">
+                <i class="fas fa-info-circle"></i>
+                Info
+            </button>
         </div>
         <div class="col-xs-4">
-            <button class="btn btn-danger btn-block">Delete</button>
+            <button class="btn btn-danger btn-block">
+                <i class="fas fa-trash"></i>
+                Delete
+            </button>
         </div>
     </div>
 
@@ -70,13 +76,36 @@
         <li>other cats</li>
     </ol>
     <form action="https://freecatphotoapp.com/submit-cat-photo">
-        <label><input type="radio" name="indoor-outdoor"> Indoor</label>
-        <label><input type="radio" name="indoor-outdoor"> Outdoor</label>
-        <label><input type="checkbox" name="personality"> Loving</label>
-        <label><input type="checkbox" name="personality"> Lazy</label>
-        <label><input type="checkbox" name="personality"> Crazy</label>
-        <input type="text" placeholder="cat photo URL" required>
-        <button type="submit">Submit</button>
+        <div class="row">
+            <div class="col-xs-6">
+                <label><input type="radio" name="indoor-outdoor"> Indoor</label>
+            </div>
+            <div class="col-xs-6">
+                <label><input type="radio" name="indoor-outdoor"> Outdoor</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-4">
+                <label><input type="checkbox" name="personality"> Loving</label>
+            </div>
+            <div class="col-xs-4">
+                <label><input type="checkbox" name="personality"> Lazy</label>
+            </div>
+            <div class="col-xs-4">
+                <label><input type="checkbox" name="personality"> Crazy</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-7">
+                <input class="form-control" type="text" placeholder="cat photo URL" required>
+            </div>
+            <div class="col-xs-5">
+                <button class="btn btn-primary" type="submit">
+                    <i class="fa fa-paper-plane"></i>
+                    Submit
+                </button>
+            </div>
+        </div>
     </form>
 
 </div>
