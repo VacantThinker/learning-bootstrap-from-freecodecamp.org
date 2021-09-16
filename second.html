@@ -18,18 +18,20 @@
             function createScriptElementAppendToBody(srcString, isDefer, isAsync) {
                 let scriptElement = document.createElement('script');
                 scriptElement.src = srcString;
-                scriptElement.defer = isDefer || true;
+                scriptElement.type = "text/javascript";
+                scriptElement.defer = isDefer === undefined;
                 // scriptElement.async = true;
                 document.body.appendChild(scriptElement);
                 scriptElement = null;
             }
-            createScriptElementAppendToBody("https://code.jquery.com/jquery-3.6.0.slim.min.js");
+            createScriptElementAppendToBody("https://code.jquery.com/jquery-3.6.0.slim.min.js", false);
             createScriptElementAppendToBody("js/second.js");
-        })
+        });
 
         window.addEventListener("DOMContentLoaded", function () {
             console.log("DOMContentLoaded")
-        })
+        });
+
 
     </script>
 </head>
