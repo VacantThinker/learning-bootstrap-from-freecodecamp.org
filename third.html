@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>second</title>
+    <title>third</title>
     <link rel="preload" as="style" onload="this.rel='stylesheet'"
           href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
@@ -10,28 +10,6 @@
 
     <link rel="preload" as="style" onload="this.rel='stylesheet'"
           href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-
-    <link rel="preload" as="script" href="https://code.jquery.com/jquery-3.6.0.slim.min.js"/>
-    <link rel="preload" as="script" href="https://unpkg.com/jquery.requestanimationframe@0.2.2/dist/jquery.requestanimationframe.min.js">
-    <link rel="preload" as="script" href="js/second.js">
-    <script defer>
-        window.addEventListener("load", () => {
-            function createScriptElementAppendToBody(srcString, isDefer, isAsync) {
-                let scriptElement = document.createElement('script');
-                scriptElement.src = srcString;
-                scriptElement.type = "text/javascript";
-                scriptElement.defer = isDefer === undefined;
-                // scriptElement.async = true;
-                document.body.appendChild(scriptElement);
-                scriptElement = null;
-            }
-
-            createScriptElementAppendToBody("https://code.jquery.com/jquery-3.6.0.slim.min.js");
-            createScriptElementAppendToBody("https://unpkg.com/jquery.requestanimationframe@0.2.2/dist/jquery.requestanimationframe.min.js")
-            createScriptElementAppendToBody("js/second.js");
-        });
-        window.addEventListener("DOMContentLoaded", () => console.log("DOMContentLoaded"));
-    </script>
 
 </head>
 <body>
@@ -73,5 +51,8 @@
     </div>
 </div>
 
+<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+<script src="https://unpkg.com/jquery.requestanimationframe@0.2.2/dist/jquery.requestanimationframe.min.js"></script>
+<script src="js/third.js"></script>
 </body>
 </html>
