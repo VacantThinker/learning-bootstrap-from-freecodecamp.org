@@ -1,0 +1,21 @@
+{
+  "name": "learning-bootstrap-from-freecodecamp.org",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "git-push": "git add . && git commit -m 'a' && git push"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VacantThinker/learning-bootstrap-from-freecodecamp.org.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VacantThinker/learning-bootstrap-from-freecodecamp.org/issues"
+  },
+  "homepage": "https://github.com/VacantThinker/learning-bootstrap-from-freecodecamp.org#readme"
+}
