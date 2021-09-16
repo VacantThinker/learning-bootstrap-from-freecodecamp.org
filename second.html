@@ -17,15 +17,25 @@
     <link rel="preload" as="style" onload="this.rel='stylesheet'"
           href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
-<!--    <link rel="preload" as="style" onload="this.rel='stylesheet'" href="css/fonts_googleapis_com_css_family_lobster.css"-->
-<!--          type="text/css">-->
-<!--    <link rel="preload" as="style" onload="this.rel='stylesheet'"-->
-<!--          href="css/http_maxcdn.bootstrapcdn.com_bootstrap_3.3.7_css_bootstrap.css"/>-->
-<!--    <link rel="preload" as="style" onload="this.rel='stylesheet'"-->
-<!--          href="css/http_use.fontawesome.com_releases_v5.8.1_css_all.css">-->
-<!--    <link rel="preload" as="style" onload="this.rel='stylesheet'"-->
-<!--          href="css/http_cdnjs.cloudflare.com_ajax_libs_animate.css_4.1.1_animate.css"/>-->
+    <link rel="preload" as="script" href="https://code.jquery.com/jquery-3.6.0.slim.min.js"/>
+    <link rel="preload" as="script" href="js/second.js">
+    <script defer>
+        window.addEventListener("load", function () {
+            function createScriptElementAppendToBody(srcString, isDefer, isAsync) {
+                let scriptElement = document.createElement('script');
+                scriptElement.src = srcString;
+                scriptElement.defer = isDefer || true;
+                // scriptElement.async = true;
+                document.body.appendChild(scriptElement);
+                scriptElement = null;
+            }
 
+            createScriptElementAppendToBody("https://code.jquery.com/jquery-3.6.0.slim.min.js");
+            createScriptElementAppendToBody("js/second.js");
+
+        })
+
+    </script>
 </head>
 <body>
 <!--Code below this line should not be changed-->
@@ -65,8 +75,7 @@
         </div>
     </div>
 </div>
+<!--<script src="js/second.js"></script>-->
 
-<script src="js/http_code.jquery.com_jquery-3.6.0.js"></script>
-<script src="js/second.js"></script>
 </body>
 </html>
